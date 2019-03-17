@@ -34,51 +34,36 @@
                         <table class="table">
                             <thead>
                                 <tr>
-                                    <th scope="col">Name</th>
-                                    <th scope="col">Role</th>
-                                    <th scope="col">Email</th>
-                                    <th scope="col">Monthly Rate</th>
-                                    <th scope="col">Start Date</th>
-                                    <th scope="col">Time Employed</th>
-                                    <th scope="row">Total Payout</th>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency (min)</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Minutes Away</th>
                                 </tr>
                             </thead>
                             <tbody></tbody>
                         </table>
                         <form>
                             <div class="form-group">
-                                <label for="nameInput">Name</label>
-                                <input type="name" class="form-control" id="employeeName" aria-describedby="emailHelp"
-                                    placeholder="Enter email">
+                                <label for="nameInput">Train Name</label>
+                                <input type="text" class="form-control" id="trainName" aria-describedby="emailHelp"
+                                    placeholder="Which train do you take?">
                             </div>
                             <div class="form-group">
-                                <label for="roleInput">Role</label>
-                                <input type="name" class="form-control" id="employeeRole" aria-describedby="emailHelp"
-                                    placeholder="Enter email">
+                                <label for="roleInput">Destination</label>
+                                <input type="text" class="form-control" id="destination" aria-describedby="emailHelp"
+                                    placeholder="Where are you going?">
                             </div>
                             <div class="form-group">
-                                <label for="emailInput">Email address</label>
-                                <input type="email" class="form-control" id="employeeEmail" aria-describedby="emailHelp"
-                                    placeholder="Enter email">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with
-                                    anyone else.</small>
+                                <label for="emailInput">First Train Time (HH:MM - miitary time)</label>
+                                <input type="text" class="form-control" id="firstTrain" aria-describedby="emailHelp"
+                                    placeholder="12:00">
                             </div>
                             <div class="form-group">
-                                <label for="rateInput">Monthly Rate</label>
-                                <input type="name" class="form-control" id="employeeRate" aria-describedby="emailHelp"
-                                    placeholder="Enter email">
+                                <label for="rateInput">Frequency (min)</label>
+                                <input type="text" class="form-control" id="frequency" aria-describedby="emailHelp"
+                                    placeholder="15">
                             </div>
-                            <div class="form-group">
-                                <label for="startInput">Start Date</label>
-                                <input type="name" class="form-control" id="employeeStart" aria-describedby="emailHelp"
-                                    placeholder="Enter email">
-                            </div>
-                            <div class="form-group">
-                                <label for="durationInput">Start Date</label>
-                                <input type="name" class="form-control" id="employeeDuration" aria-describedby="emailHelp"
-                                    placeholder="Enter email">
-                            </div>
-                            
                             <button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
                         </form>
                     </div>
@@ -89,8 +74,9 @@
 
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
-    <script src="app.js"></script>
+    <script src="assets/javascript/app.js"></script>
 
 
 
