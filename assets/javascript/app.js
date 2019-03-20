@@ -18,10 +18,8 @@
   var frequency = "";
   var firstTrain = "";
   
-  
   employeeList.on('child_added', function(snap){
     
-    // var formattedDate = moment.unix(record.start).format('MM/DD/YYYY');
     var nextArrival = 0;
     var minutesAway = 0;
     var firstTrain = snap.val().firstTrain;
@@ -59,7 +57,6 @@
       var newRow = $("<div>");
       newRow.addClass("doesThisWork");
       newRow.append("<div class='row'>");
-
     
       name = $("#trainName").val().trim();
       destination = $("#destination").val().trim();

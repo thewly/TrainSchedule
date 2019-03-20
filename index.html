@@ -5,31 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gif Ajax HW</title>
+    <title>Train Scheduler</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <style>
+        /* There were limited styles applied so I left them internal, forgive me */
         .doesThisWork {
             background-color: blue;
         }
+        .dat-background-tho {
+            background-image: url("assets/images/train.jpg");
+            background-repeat: repeat;
+            background-color: blueviolet;
+        }
+        .breathing-room {
+            margin-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
     </style>
-
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 </head>
 
 <body class="dat-background-tho">
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-4">Fluid jumbotron</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-        </div>
+    <div class="jumbotron">
+        <h1 class="display-4">DFW Train Scheduler</h1>
+        <p class="lead">I take the train to work. These are my trains. Feel free to enter your own!</p>
+        <hr class="my-4">
+        <p>If you want to look up your train & add to the cheduler, feel free to check out other local routes &
+            schedules:</p>
+        <p class="lead">
+            <a class="btn btn-outline-success btn-sm" href="https://www.dart.org/riding/dartrailgreenline.asp"
+                role="button">DART Green Line</a>
+
+            <a class="btn btn-outline-success btn-sm" href="https://www.dcta.net/schedules-maps/bus-service-schedules"
+                role="button">DCTA A-Train</a>
+
+            <a class="btn btn-outline-success btn-sm" href="https://www.dart.org/schedules/schedules.asp"
+                role="button">Additional DART & TRE Schedules</a>
+        </p>
     </div>
+    <!-- <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Train Scheduler</h1>
+            <p class="lead">These are the trains I take to work. Feel free to add your trains to the list below.</p>
+        </div>
+    </div> -->
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <div class="card">
+            <div class="col-md-8">
+                <div class="card breathing-room">
                     <div class="card-body">
                         <table class="table">
                             <thead>
@@ -43,6 +68,12 @@
                             </thead>
                             <tbody></tbody>
                         </table>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card breathing-room">
+                    <div class="card-body">
                         <form>
                             <div class="form-group">
                                 <label for="nameInput">Train Name</label>
@@ -70,17 +101,10 @@
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
-    <script src="assets/javascript/app.js"></script>
-
-
-
-
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
+        <script src="assets/javascript/app.js"></script>
 </body>
 
 </html>
